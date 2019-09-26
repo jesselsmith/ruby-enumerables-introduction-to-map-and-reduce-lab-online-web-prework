@@ -44,6 +44,7 @@ def reduce_to_any_true(array)
   array.size.times do |counter|
     if array[counter]
       return true
+    end
   end
   false
 end
