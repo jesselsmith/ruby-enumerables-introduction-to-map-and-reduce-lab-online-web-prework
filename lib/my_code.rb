@@ -39,4 +39,11 @@ def reduce_to_all_true(array)
   end
   is_it_truthy
 end
-  
+
+def reduce_to_any_true(array)
+  array.size.times do |counter|
+    if array[counter]
+      return true
+  end
+  false
+end
