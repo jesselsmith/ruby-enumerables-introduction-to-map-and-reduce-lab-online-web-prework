@@ -35,8 +35,8 @@ end
 def reduce_to_all_true(array)
   is_it_truthy = true
   array.size.times do |counter|
-    is_it_truthy = is_it_truthy && 
+    is_it_truthy = is_it_truthy && array[counter]
   end
-  array
+  is_it_truthy
 end
   
